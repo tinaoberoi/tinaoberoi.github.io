@@ -7,16 +7,6 @@
   <title>Tina Oberoi</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<button id="backToTop" title="Go to top">↑</button>
-<script>
-  const topBtn = document.getElementById("backToTop");
-  window.onscroll = function () {
-    topBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
-  };
-  topBtn.onclick = function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
 <body>
   <header>
     <div class="header-left">
@@ -90,7 +80,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:toberoi@uchicago.com">toberoi@uchicago.com</a></p>
       <h3>📍 Current Location</h3>
-      <p>Chicago, IL</p>
+      <p>Santa Clara, CA</p>
       <h3>💻 GitHub</h3>
       <p>Check out my projects and code on <a href="https://github.com/tinaoberoi" target="_blank">GitHub</a>.</p>
     </section>
@@ -99,6 +89,16 @@
   <footer>
     <p>&copy; 2025 Tina Oberoi</p>
   </footer>
+  <button id="backToTop" title="Go to top">↑</button>
+  <script>
+    const topBtn = document.getElementById("backToTop");
+    window.onscroll = function () {
+      topBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 
 </html>
